@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: guoqinghsuai Microsoft, Microsoft, LIC=MPPAR-K9GJ3-PZRWB-2PF9W-Q46UE-QQSHC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+F:\zhuomian\buff\USER\Template.uvprojx
+Project File Date:  08/17/2017
+
+<h2>Output:</h2>
+Build target 'Template'
+compiling gizwits_product.c...
+..\Hal\Gizwits\gizwits_protocol.h(28): warning:  #223-D: function "rbCapacity" declared implicitly
+      return rbCapacity(rb) - rbCanRead(rb);
+..\Hal\Gizwits\gizwits_protocol.h(28): warning:  #223-D: function "rbCanRead" declared implicitly
+      return rbCapacity(rb) - rbCanRead(rb);
+..\Hal\Gizwits\gizwits_product.c(58): warning:  #223-D: function "rbCapacity" declared implicitly
+          tailAvailSz = rbCapacity(rb) - (rb->rbTail - rb->rbBuff);
+..\Hal\Gizwits\gizwits_product.c: 3 warnings, 0 errors
+compiling gizwits_protocol.c...
+..\Hal\Gizwits\gizwits_protocol.h(28): warning:  #223-D: function "rbCapacity" declared implicitly
+      return rbCapacity(rb) - rbCanRead(rb);
+..\Hal\Gizwits\gizwits_protocol.h(28): warning:  #223-D: function "rbCanRead" declared implicitly
+      return rbCapacity(rb) - rbCanRead(rb);
+..\Hal\Gizwits\gizwits_protocol.c(28): warning:  #223-D: function "rbCapacity" declared implicitly
+          tailAvailSz = rbCapacity(rb) - (rb->rbTail - rb->rbBuff);
+..\Hal\Gizwits\gizwits_protocol.c(53): warning:  #1-D: last line of file ends without a newline
+  }
+..\Hal\Gizwits\gizwits_protocol.c: 4 warnings, 0 errors
+linking...
+..\OBJ\Template.axf: Error: L6200E: Symbol pRb multiply defined (by gizwits_protocol.o and gizwits_product.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"..\OBJ\Template.axf" - 1 Error(s), 7 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\zhuomian\buff\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
